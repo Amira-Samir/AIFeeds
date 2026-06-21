@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface-950: #0f1117;
+  --color-surface-900: #161922;
+  --color-surface-800: #1e222e;
+  --color-surface-700: #2a2f3d;
+
+  --color-accent-400: #818cf8;
+  --color-accent-500: #6366f1;
+  --color-accent-600: #4f46e5;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  @apply bg-gray-100 text-gray-900 antialiased;
+}
+
+.dark body {
+  @apply bg-surface-950 text-gray-100;
+}
