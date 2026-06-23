@@ -27,8 +27,9 @@ Output both file structures cleanly so I can save them directly into my workspac
 ---
 
 ## Prompt 2 - Generate a Component from Design
-Using the Figma MCP, from the file {url} and node id {node ID}.
-Convert this selection into a modern React component (using TypeScript and functional components) that precisely maps to our configured Tailwind CSS configuration. Adhere to these strict architectural rules:
+Using the Figma MCP, from the file https://www.figma.com/design/UU089oHCZD4v1RnmLVltwS/-shadcn-ui---Design-System--Community-?node-id=2-283&t=1FXnf1xoue1UU3BL-0
+
+Convert this selection into a modern React component (using Javascript and functional components) that precisely maps to our configured Tailwind CSS configuration. Adhere to these strict architectural rules:
 
 Design Token Integration:
 
@@ -38,7 +39,7 @@ Strictly use our defined Tailwind classes that bridge to our CSS variables (e.g.
 
 Dark Mode Support:
 
-Ensure layout containers adapt seamlessly when the root theme changes. Since our design system handles dark mode via the global CSS variables (the --dozen- variables swap values automatically), rely on the semantic classes for elements that adapt via variable mapping.
+Ensure layout containers adapt seamlessly when the root theme changes. Since our design system handles dark mode via the global CSS variables (the -- css variables variables swap values automatically), rely on the semantic classes for elements that adapt via variable mapping.
 
 Responsive Adaptability:
 
